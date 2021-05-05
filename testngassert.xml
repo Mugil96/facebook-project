@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+  <run>
+  <define name="1st group">
+  <include name="reg"></include>
+  <include name="E2E"></include>
+  </define>
+  <define name="2nd group">
+  <include name="sanity"></include>
+  <include name="smoke"></include>
+  </define>
+  </run>
+  </groups>
+    <classes>
+      <class name="org.pack2.SampleAssert"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
